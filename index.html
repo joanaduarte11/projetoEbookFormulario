@@ -26,69 +26,50 @@
         <div class="formulario">
           <div class="titulo-form">
             <h2>Faça o download grátis aqui</h2>
-            <!-- Eu poderia ter colocado outro h1? Ou o p seria o ideal assim como o subtítulo abaixo?-->
-
             <p>Preencha o formulário abaixo para acessar o ebook.</p>
           </div>
-
           <div class="campo-form">
             <label for="nome">Nome*</label><br />
-            <input type="text" id="nome" name="nome" />
+              <input type="text" id="nome" name="nome" />
           </div>
-
           <div class="campo-form">
             <label for="email">Email*</label><br />
-            <input type="text" id="email" name="email" />
+              <input type="text" id="email" name="email" />
           </div>
-
           <div class="campo-form">
             <label for="opcoes">Profissionalmente, você se considera:*</label
             ><br />
-            <select name="serviceQual" id="serviceQual" class="formSelect">
-              <option disable selected value="0"> Selecione </option>
-              <option value="iniciante">Iniciante</option>
-              <option value="intermediario">Intermediário</option>
-              <option value="avancado">Avançado</option>
-            </select>
+              <select name="serviceQual" id="serviceQual">
+                <option disable selected value="0"> Selecione </option>
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="avancado">Avançado</option>
+              </select>
           </div>
-
           <div class="campo-form">
             <label for="objetivo">Qual é o seu objetivo?*</label><br />
-            <select name="serviceQual" id="serviceQual" class="formSelect">
-              <option disable selected value="0"> Selecione </option>
-              <option value="frontend">Front-End</option>
-              <option value="backend">Back-End</option>
-              <option value="fullstack">Full-Stack</option>
-            </select>
+              <select name="serviceQual" id="serviceQual">
+                <option disable selected value="0">Selecione</option>
+                <option value="frontend">Front-End</option>
+                <option value="backend">Back-End</option>
+                <option value="fullstack">Full-Stack</option>
+              </select>
           </div>
-
           <div class="campo-form">
-            <label for="interesse"
-              >Você possui interesse em iniciar um curso online?*</label
-            ><br />
-            <input type="radio" id="sim" name="sim" />
-            <label for="sim">Sim</label><br />
-            <input type="radio" />
-            <label for="nao" id="nao" name="nao">Não</label>
+            <label for="interesse">Você possui interesse em iniciar um curso online?*</label><br />
+              <input type="radio" name="interesse-curso-online" id="sim" value="sim"/>
+             <label for="sim">Sim</label><br />
+              <input type="radio" name="interesse-curso-online" id="nao" value="nao"/>
+             <label for="nao" id="nao" name="nao">Não</label>
           </div>
-
           <div class="campo-form">
             <label for="soma">7 + 8 =?</label><br />
-            <input type="text" id="soma" name="soma" />
-            <!-- No site parece ser esse type text mesmo -->
+              <input type="text" id="soma" name="soma" />
           </div>
-          <br />
-
-          <button type="submit" id="form-button" value="enviar">
-            Aprender HTML e CSS agora!
-          </button>
-          <!-- Essa tag pode ou tem que ser o input button mesmo? -->
-
-          <p class="fim">
-            Prometemos não utilizar suas informações de contato para enviar
-            qualquer tipo de SPAM
-          </p>
-          <!-- tenho duvida se é <p> mesmo -->
+          <br/>
+          <button class="form-button" value="enviar">Aprender HTML e CSS agora!</button>
+          <spam class="spam">Prometemos não utilizar suas informações de contato para enviar
+            qualquer tipo de SPAM</spam>
         </div>
       </form>
     </main>
