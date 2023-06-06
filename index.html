@@ -1,77 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[E-book] Guia do HTML e CSS</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="titulo-imagem">
-      <div class="title">
-        <h1>[Ebook] Guia do HTML e CSS</h1>
-        <img src="img/linha.png" id="line" />
-        <p class="subtitle">
-          Dê seus primeiros passos com desenvolvimento web e aprenda a criar uma
-          página do ZERO!
-        </p>
-      </div>
-      <img src="img/guia_png.png" class="imagem" />
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[E-book] Guia do HTML e CSS</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-    <main>
-      <form action="#" method="post">
-        <div class="formulario">
-          <div class="titulo-form">
-            <h2>Faça o download grátis aqui</h2>
-            <p>Preencha o formulário abaixo para acessar o ebook.</p>
-          </div>
-          <div class="campo-form">
-            <label for="nome">Nome*</label><br />
-              <input type="text" id="nome" name="nome" />
-          </div>
-          <div class="campo-form">
-            <label for="email">Email*</label><br />
-              <input type="text" id="email" name="email" />
-          </div>
-          <div class="campo-form">
-            <label for="opcoes">Profissionalmente, você se considera:*</label
-            ><br />
-              <select name="serviceQual" id="serviceQual">
-                <option disable selected value="0"> Selecione </option>
-                <option value="iniciante">Iniciante</option>
-                <option value="intermediario">Intermediário</option>
-                <option value="avancado">Avançado</option>
-              </select>
-          </div>
-          <div class="campo-form">
-            <label for="objetivo">Qual é o seu objetivo?*</label><br />
-              <select name="serviceQual" id="serviceQual">
-                <option disable selected value="0">Selecione</option>
-                <option value="frontend">Front-End</option>
-                <option value="backend">Back-End</option>
-                <option value="fullstack">Full-Stack</option>
-              </select>
-          </div>
-          <div class="campo-form">
+<body>
+  <section class="titulo-imagem">
+    <h1 class="title">[Ebook] Guia do HTML e CSS</h1>
+    <img src="img/linha.png" id="line" />
+    <p class="subtitle">Dê seus primeiros passos com desenvolvimento web e aprenda a criar uma
+      página do ZERO!</p>
+    <img src="img/guia_png.png" class="imagem" />
+  </section>
+
+  <main class="container">
+    <form action="#" method="post">
+      <div class="formulario">
+        <h2 class="titulo-form">Faça o download grátis aqui</h2>
+        <p class="text">Preencha o formulário abaixo para acessar o ebook.</p>
+        <div class="fields">
+          <label for="nome">Nome*</label><br />
+          <input type="text" id="nome" name="nome" />
+          <label for="email">Email*</label><br />
+          <input type="text" id="email" name="email" />
+          <label for="opcoes">Profissionalmente, você se considera:*</label><br />
+          <select name="serviceQual" id="serviceQual">
+            <option disable selected value="0"> Selecione </option>
+            <option value="iniciante">Iniciante</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avancado">Avançado</option>
+          </select>
+          <label for="objetivo">Qual é o seu objetivo?*</label><br />
+          <select name="serviceQual" id="serviceQual">
+            <option disable selected value="0">Selecione</option>
+            <option value="frontend">Front-End</option>
+            <option value="backend">Back-End</option>
+            <option value="fullstack">Full-Stack</option>
+          </select>
+          <div class="radio">
             <label for="interesse">Você possui interesse em iniciar um curso online?*</label><br />
-              <input type="radio" name="interesse-curso-online" id="sim" value="sim"/>
-             <label for="sim">Sim</label><br />
-              <input type="radio" name="interesse-curso-online" id="nao" value="nao"/>
-             <label for="nao" id="nao" name="nao">Não</label>
+            <input type="radio" name="interesse-curso-online" id="sim" value="sim" />
+            <label for="sim">Sim</label><br />
           </div>
-          <div class="campo-form">
-            <label for="soma">7 + 8 =?</label><br />
-              <input type="text" id="soma" name="soma" />
+          <div class="radio">
+            <input type="radio" name="interesse-curso-online" id="nao" value="nao" />
+            <label for="nao" id="nao" name="nao">Não</label>
           </div>
-          <br/>
-          <button class="form-button" value="enviar">Aprender HTML e CSS agora!</button>
-          <spam class="spam">Prometemos não utilizar suas informações de contato para enviar
-            qualquer tipo de SPAM</spam>
+          <label for="soma">7 + 8 =?</label><br />
+          <input type="text" id="soma" name="soma" />
         </div>
-      </form>
-    </main>
-  </body>
+        <br />
+        <button class="form-button" value="enviar">Aprender HTML e CSS agora!</button>
+        <spam class="spam">Prometemos não utilizar suas informações de contato para enviar
+          qualquer tipo de SPAM</spam>
+      </div>
+    </form>
+  </main>
+</body>
+
 </html>

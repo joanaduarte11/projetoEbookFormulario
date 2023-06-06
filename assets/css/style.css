@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: sans-serif;
+}
+
+.titulo-imagem {
+ color: white;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ font-family: sans-serif;
+
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.4em;
+}
+
+.subtitle {
+  width: 425px;
+  margin: auto;
+}
+
+#line {
+  width: 95px;
+  padding-bottom: 10px;
+}
+
+.imagem {
+  width: 300px;
+  position: absolute;
+  padding: 40px 0 0 70px;
+}
+
+.container{
+  min-height: 100vh;
+  background-color: #407094;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 20px 25px;
+}
+
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 80%;
+  width: 400px;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: #ebebeb;
+}
+
+.formulario .titulo-form {
+  color: #707070;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.formulario .text {
+  color: #707070;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+.formulario .fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario .fields label {
+  color: #7d7d7d;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin: 3px 0;
+}
+
+.formulario .fields input {
+  display: inline-block;
+  background-color: #ffffff;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 20px;
+  width: 100%;
+  height: 36px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.formulario .fields input,
+.formulario .fields select {
+  display: inline-block;
+  background-color: #ffffff;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 20px;
+  width: 100%;
+  height: 36px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.formulario .fields input[type="radio"] {  /*buscar inputs do mesmo type*/
+  width: auto;
+}
+
+.formulario .fields .radio p {
+  margin-top: 6px;
+  width: 100%;
+}
+
+.formulario .fields .radio label {
+  margin: 0;
+}
+
+.formulario .fields .radio {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+
+.form-button {
+  padding: 10px 0;
+  width: 102%;
+  background-color: #e5943b;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.spam {
+  font-size: 12px;
+  padding-bottom: 0;
+}
+
+
+/* justify-content pra alinhar os quadros */
